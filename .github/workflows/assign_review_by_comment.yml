@@ -10,6 +10,6 @@ jobs:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "${GITHUB_CONTEXT}"
       - name: assign_review_by_comment
-        uses: cats-oss/github-action-auto-assign@master
+        uses: nodaguti/github-action-auto-assign@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
