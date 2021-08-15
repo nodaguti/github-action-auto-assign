@@ -66,7 +66,7 @@ async function replaceReviewRequests(
             repo,
             // eslint-disable-next-line camelcase
             pull_number: issueNum,
-            assignees: currentAssignees
+            reviewers: currentAssignees
         });
         // TODO: assert return value
     }
@@ -76,7 +76,7 @@ async function replaceReviewRequests(
         repo,
         // eslint-disable-next-line camelcase
         pull_number: issueNum,
-        assignees: nextAssignees
+        reviewers: nextAssignees
     });
 
     return changeAssign;
